@@ -6,3 +6,5 @@ describe('x', () => {
       cy.get('[data-test="result"]').should('have.value', '2 310 000.16');
   });
 });
+
+export {}; //Little hack needed because isolatedModules is true in tsconf
