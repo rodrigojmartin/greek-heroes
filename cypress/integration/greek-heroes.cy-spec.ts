@@ -12,6 +12,14 @@ describe('Greek heroes calculation', () => {
       cy.get('[data-test="submitButton"]').click();
       cy.get('[data-test="result"]').should('have.value', '1 600.00');
     });
+
+    it('transforms 0 to 0.00', () => {
+      cy.visit('http://localhost:3000');
+      cy.get('[data-test="inputNumber"]').type("0");
+      cy.get('[data-test="submitButton"]').click();
+      cy.get('[data-test="result"]').should('have.value', '0.00');
+    });
+
 });
 
 export {}; //Little hack needed because isolatedModules is true in tsconf
