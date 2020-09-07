@@ -14,14 +14,13 @@ describe('NumberConverterForm', () => {
             mount(<NumberConverterForm onSave={handleOnSave}/>);
             
             cy.get('[data-test="inputNumber"]').type("2310000.159897");
-            cy.get('[data-test="submitButton"]').click();
-            expect(handleOnSave).to.have.been.calledWith("2310000.159897");
+            cy.get('[data-test="submitButton"]').click().then(() => {
+                expect(handleOnSave).to.have.been.calledWith("2310000.159897");
+            });
+            
         })
 
-
-
     })
-
 })
 
 
