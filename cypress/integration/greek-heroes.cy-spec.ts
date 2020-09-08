@@ -28,6 +28,12 @@ describe('Greek heroes calculation', () => {
     cy.contains('Result is -1 000 000.00')
   });
 
+  it('throws an error when the user enters non numbers', () => {
+    cy.get('[data-test="inputNumber"]').type('Camila');
+    cy.get('[data-test="submitButton"]').click();
+    cy.contains('Result is not a number')
+  });
+
 });
 
 export {}; //Little hack needed because isolatedModules is true in tsconf
