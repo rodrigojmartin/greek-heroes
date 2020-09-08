@@ -3,5 +3,6 @@
   "supportFile": "node_modules/cypress-react-unit-test/support",
   "testFiles": "**/*.cy-spec.*",
   "experimentalComponentTesting": true,
-  "componentFolder": "src"
+  "componentFolder": "src",
+  "baseUrl": "http://localhost:3000"
 }

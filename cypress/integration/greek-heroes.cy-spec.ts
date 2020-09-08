@@ -1,7 +1,7 @@
 describe('Greek heroes calculation', () => {
     
   beforeEach(() => {
-    cy.visit('http://localhost:3000');
+    cy.visit('/');
   })
   
   it('transforms 2310000.159897 to 2 310 000.16', () => {
