@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
 import NumberConverterForm from './NumberConverterForm';
 
-const handleSave = (numberToConvert: string) => {
-  if (numberToConvert == '2310000.159897') {
-    return '2 310 000.16';
-  } else {
-    return '1 600.00';
-  }
-  
-}
-
 class App extends Component {
+  
+  state = {result: ''}
+
+  handleSave = (numberToConvert: string) => {
+    var number = parseFloat(numberToConvert);
+    var displayResult = number.toLocaleString('fr-FR', {minimumFractionDigits: 2}).replace(',','.')
+    this.setState({result: displayResult});
+  }
+
   render() {
     return(
       <div>
-        <NumberConverterForm onSave={handleSave}/>
+        <NumberConverterForm onSave={this.handleSave} />
+         <p>Result is {this.state.result}</p>
       </div>
     );
   }

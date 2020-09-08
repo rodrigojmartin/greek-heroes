@@ -1,12 +1,11 @@
 import * as React from 'react';
 
 interface NumberConverterProps {
-    onSave: (numberToConvert) => string;
+    onSave: (numberToConvert: string) => void;
 }
 
 interface NumberConverterState {
     numberToConvert: string;
-    result: string;
 }
 
 export default class NumberConverterForm extends React.Component<NumberConverterProps, NumberConverterState> {
@@ -15,7 +14,6 @@ export default class NumberConverterForm extends React.Component<NumberConverter
         super(props);
         this.state = {
             numberToConvert: '',
-            result: ''
         };
       }
 
@@ -26,8 +24,8 @@ export default class NumberConverterForm extends React.Component<NumberConverter
     handleOnSave = () => {
         const { numberToConvert } = this.state
         const { onSave } = this.props
-        var processedResult = onSave(numberToConvert)
-        this.setState({result: processedResult})
+        onSave(numberToConvert)
+
     }
 
     render () {
@@ -44,11 +42,6 @@ export default class NumberConverterForm extends React.Component<NumberConverter
             <button 
                 data-test="submitButton"
                 onClick={this.handleOnSave}
-            />
-            
-            <input
-                data-test="result"
-                value={this.state.result}
             />
             
           </div>
