@@ -22,6 +22,12 @@ describe('Greek heroes calculation', () => {
     cy.contains('Result is 0.00')
   });
 
+  it('transforms -1000000 to -1 000 000.00', () => {
+    cy.get('[data-test="inputNumber"]').type('-1000000');
+    cy.get('[data-test="submitButton"]').click();
+    cy.contains('Result is -1 000 000.00')
+  });
+
 });
 
 export {}; //Little hack needed because isolatedModules is true in tsconf
