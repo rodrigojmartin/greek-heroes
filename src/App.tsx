@@ -7,8 +7,13 @@ class App extends Component {
 
   handleSave = (numberToConvert: string) => {
     var number = parseFloat(numberToConvert);
-    var displayResult = number.toLocaleString('fr-FR', {minimumFractionDigits: 2}).replace(',','.')
-    this.setState({result: displayResult});
+    if (isNaN(number)) {
+      this.setState({result: 'not a number'});  
+    } else {
+      var displayResult = number.toLocaleString('fr-FR', {minimumFractionDigits: 2}).replace(',','.')
+      this.setState({result: displayResult});
+    }
+    
   }
 
   render() {
