@@ -8,7 +8,7 @@ class App extends Component {
   
   handleSave = (numberToConvert: string) => {
     var result = convertMoney(numberToConvert);
-    if (result == 'not a number') {
+    if (result === 'not a number') {
       this.setState({result: 'not a number'});
     } else {
       this.setState({result: result});
