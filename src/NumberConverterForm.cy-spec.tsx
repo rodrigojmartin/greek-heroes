@@ -9,7 +9,7 @@ import * as React from 'react';
 describe('NumberConverterForm', () => {
 
     describe('Clicking the transform button', () => {
-        it('Updates the result field', () => {
+        it('calls the parent function with the proper value', () => {
             const handleOnSave = cy.stub()
             mount(<NumberConverterForm onSave={handleOnSave}/>);
             
