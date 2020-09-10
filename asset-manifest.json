@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/greek-heroes/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/greek-heroes/static/js/main.2eae9e65.chunk.js",
+    "main.js.map": "/greek-heroes/static/js/main.2eae9e65.chunk.js.map",
+    "runtime-main.js": "/greek-heroes/static/js/runtime-main.29863d69.js",
+    "runtime-main.js.map": "/greek-heroes/static/js/runtime-main.29863d69.js.map",
+    "static/js/2.9d408955.chunk.js": "/greek-heroes/static/js/2.9d408955.chunk.js",
+    "static/js/2.9d408955.chunk.js.map": "/greek-heroes/static/js/2.9d408955.chunk.js.map",
+    "index.html": "/greek-heroes/index.html",
+    "precache-manifest.684a58d2815db8092f4b08266f5ac099.js": "/greek-heroes/precache-manifest.684a58d2815db8092f4b08266f5ac099.js",
+    "service-worker.js": "/greek-heroes/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/greek-heroes/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.9d408955.chunk.js.LICENSE.txt": "/greek-heroes/static/js/2.9d408955.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.29863d69.js",
+    "static/js/2.9d408955.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.2eae9e65.chunk.js"
+  ]
+}
