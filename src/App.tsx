@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
 import NumberConverterForm from './NumberConverterForm';
+import { convertMoney } from './Utils'
 
 class App extends Component {
   
   state = {result: ''}
-
+  
   handleSave = (numberToConvert: string) => {
-    var number = parseFloat(numberToConvert);
-    if (isNaN(number)) {
-      this.setState({result: 'not a number'});  
+    var result = convertMoney(numberToConvert);
+    if (result == 'not a number') {
+      this.setState({result: 'not a number'});
     } else {
-      var displayResult = number.toLocaleString('fr-FR', {minimumFractionDigits: 2}).replace(',','.')
-      this.setState({result: displayResult});
+      this.setState({result: result});
     }
-    
   }
 
   render() {
