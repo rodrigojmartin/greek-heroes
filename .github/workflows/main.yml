@@ -1,4 +1,4 @@
-name: With server
+name: Greek Heroes Pipeline 👷
 on: [push]
 jobs:
   build-and-test:
