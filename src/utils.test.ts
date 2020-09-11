@@ -1,5 +1,5 @@
 /// <reference types="jest" />
-import {convertMoney} from '../utils';
+import {convertMoney} from './utils';
 import Sinkdweller from 'sinkdweller';
 
 //Load the list of nasty strings to be tested
