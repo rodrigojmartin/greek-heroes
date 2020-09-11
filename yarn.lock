@@ -12744,6 +12744,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+sinkdweller@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/sinkdweller/-/sinkdweller-1.0.7.tgz#bb4ead75ed843010edabf106f5696d5e6676bd36"
+  integrity sha512-2iwkzAW9u9ucpQHnlsOkjOkQJl7W6PAFLcXwzRo6ICGcwBAzmuDtQhWDYEw6v1gWjf8mqbroinlx5TnqgeKogA==
+
 sisteransi@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
