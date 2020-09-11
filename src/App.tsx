@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import NumberConverterForm from './NumberConverterForm';
-import { convertMoney } from './Utils'
+import { convertMoney} from './utils'
 
 class App extends Component {
   
