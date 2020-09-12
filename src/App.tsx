@@ -5,7 +5,7 @@ import { convertMoney } from './Utils';
 class App extends Component {
     state = { result: '' };
 
-    handleSave = (numberToConvert: string) => {
+    handleSave = (numberToConvert: string): void => {
         const result = convertMoney(numberToConvert);
         if (result === 'not a number') {
             this.setState({ result: 'not a number' });
