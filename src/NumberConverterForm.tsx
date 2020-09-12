@@ -35,7 +35,7 @@ export default class NumberConverterForm extends React.Component<NumberConverter
                     onChange={this.handleTextChange}
                     value={this.state.numberToConvert}
                 />
-                <button data-test="submitButton" onClick={this.handleOnSave} />
+                <button data-test="submitButton" onClick={this.handleOnSave}> Convert money!</button>
             </div>
         );
     }
