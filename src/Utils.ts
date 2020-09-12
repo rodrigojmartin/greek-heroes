@@ -7,3 +7,8 @@ export const convertMoney = (numberToConvert: string): string => {
         return displayResult;
     }
 };
+
+export const inputData = (inputData: string): void => {
+    cy.get('[data-test="inputNumber"]').type(inputData);
+    cy.get('[data-test="submitButton"]').click();
+};
