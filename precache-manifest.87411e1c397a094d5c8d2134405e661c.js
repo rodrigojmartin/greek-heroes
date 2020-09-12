@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb10d67677556b49249e05fc7f989afd",
+    "revision": "5e576c64472969ecd1b5e75a6fec4bfc",
     "url": "/greek-heroes/index.html"
   },
   {
-    "revision": "3b1b66f91434bc0e9a3b",
+    "revision": "e6f0d261db6c161b28b4",
     "url": "/greek-heroes/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/greek-heroes/static/js/2.9d408955.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b1b66f91434bc0e9a3b",
-    "url": "/greek-heroes/static/js/main.65b95a3f.chunk.js"
+    "revision": "e6f0d261db6c161b28b4",
+    "url": "/greek-heroes/static/js/main.d58820b6.chunk.js"
   },
   {
     "revision": "86c75b061df4d2f1ca82",
