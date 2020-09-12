@@ -1,10 +1,9 @@
 export const convertMoney = (numberToConvert: string) => {
-    var number = parseFloat(numberToConvert);
+    const number = parseFloat(numberToConvert);
     if (isNaN(number)) {
-        return ('not a number');;
-    }
-    else {
-        var displayResult = number.toLocaleString('fr-FR', { minimumFractionDigits: 2 }).replace(',', '.');
-        return (displayResult);
+        return 'not a number';
+    } else {
+        const displayResult = number.toLocaleString('fr-FR', { minimumFractionDigits: 2 }).replace(',', '.');
+        return displayResult;
     }
 };
