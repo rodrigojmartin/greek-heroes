@@ -1,4 +1,4 @@
-export const convertMoney = (numberToConvert: string) => {
+export const convertMoney = (numberToConvert: string): string => {
     const number = parseFloat(numberToConvert);
     if (isNaN(number)) {
         return 'not a number';

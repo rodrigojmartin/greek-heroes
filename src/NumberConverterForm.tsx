@@ -16,11 +16,11 @@ export default class NumberConverterForm extends React.Component<NumberConverter
         };
     }
 
-    handleTextChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    handleTextChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
         this.setState({ numberToConvert: event.target.value });
     };
 
-    handleOnSave = () => {
+    handleOnSave = (): void => {
         const { numberToConvert } = this.state;
         const { onSave } = this.props;
         onSave(numberToConvert);
