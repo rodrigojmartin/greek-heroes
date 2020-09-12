@@ -10,11 +10,11 @@ describe('NumberConverterForm', () => {
             const handleOnSave = cy.stub();
             mount(<NumberConverterForm onSave={handleOnSave} />);
 
-            cy.get('[data-test="inputNumber"]').type('2310000.159897');
+            cy.get('[data-test="inputNumber"]').type('message');
             cy.get('[data-test="submitButton"]')
                 .click()
                 .then(() => {
-                    expect(handleOnSave).to.have.been.calledWith('2310000.159897');
+                    expect(handleOnSave).to.have.been.calledWith('message');
                 });
         });
     });
