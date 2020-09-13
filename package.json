@@ -46,7 +46,11 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "moduleFileExtensions": ["ts", "tsx", "js"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.0.1",
@@ -54,6 +58,7 @@
     "cypress": "^5.1.0",
     "cypress-react-unit-test": "^4.11.2",
     "eslint": "^7.8.1",
+    "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "gh-pages": "^3.1.0"
   }
