@@ -6,11 +6,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
+      - name: Setup Node
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: '14'
+          check-latest: true
+      - name: Install Dependencies
+        run: yarn
+      - name: Unit Test
+        run: yarn test --verbose
       - name: Run Cypress tests
         uses: cypress-io/github-action@v2
         with:
           build: yarn build
-          test: yarn test
           start: yarn start
           wait-on: 'http://localhost:3000'
       - name: Upload app
