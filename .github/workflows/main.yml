@@ -6,14 +6,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Run unit tests
-        run: npx jest
       - name: Run Linter
         uses: hallee/eslint-action@1.0.3
       - name: Run Cypress tests
         uses: cypress-io/github-action@v2
         with:
           build: yarn build
+          test: yarn test
           start: yarn start
           wait-on: 'http://localhost:3000'
       - name: Upload app
