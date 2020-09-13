@@ -24,7 +24,7 @@ describe('convert money unit tests', ()=> {
     });
 
     test('handles negative numbers', () =>{
-        expect(convertMoney('-1000')).toBe('-1 000');
+        expect(convertMoney('-1000')).toBe('-1 000.00');
     });
     test('handles infinity', () =>{
     expect(convertMoney('Infinity')).toBe('∞');
