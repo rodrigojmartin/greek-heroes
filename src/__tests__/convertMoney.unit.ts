@@ -26,6 +26,23 @@ describe('convert money unit tests', ()=> {
     test('handles negative numbers', () =>{
         expect(convertMoney('-1000')).toBe('-1 000.00');
     });
+
+    test('handles empty input', () =>{
+        expect(convertMoney('')).toBe('not a number');
+    });
+
+    test('handles leading spaces', () =>{
+        expect(convertMoney('           1')).toBe('1.00');
+    });
+
+    test('handles trailing spaces', () =>{
+        expect(convertMoney('2             ')).toBe('2.00');
+    });
+
+    test('handles leading and trailing spaces', () =>{
+        expect(convertMoney('       2000000.122             ')).toBe('2 000 000.12');
+    });
+
     test('handles infinity', () =>{
     expect(convertMoney('Infinity')).toBe('∞');
     });
