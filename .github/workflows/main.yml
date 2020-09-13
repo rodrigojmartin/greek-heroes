@@ -6,10 +6,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Run Linter
-        uses: hallee/eslint-action@1.0.3
-        with:
-          repo-token: ${{secrets.GITHUB_TOKEN}}
       - name: Run Cypress tests
         uses: cypress-io/github-action@v2
         with:
