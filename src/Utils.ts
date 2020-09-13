@@ -3,7 +3,7 @@ export const convertMoney = (numberToConvert: string): string => {
     if (isNaN(number)) {
         return 'not a number';
     } else {
-        const displayResult = number.toLocaleString('fr-FR', { minimumFractionDigits: 2 }).replace(',', '.');
+        const displayResult = number.toLocaleString('fr-FR', { maximumFractionDigits: 2, minimumFractionDigits: 2 }).replace(',', '.');
         return displayResult;
     }
 };
